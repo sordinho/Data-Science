@@ -1,19 +1,16 @@
-REMARK
 /*
 Creating batabase.
 */
 
 
-REMARK
-/* 
+/*
 Delete tables IMP, DIP if present
 */
 drop table imp;
 drop table dip;
 
 
-REMARK
-/* 
+/*
 Creating table DIP 
 */  
 CREATE TABLE DIP
@@ -39,7 +36,7 @@ CREATE TABLE IMP
  FOREIGN KEY(DEPTNO) REFERENCES DIP(DEPTNO) ON DELETE CASCADE);
 
 
-REMARK
+
 /*
 Inserting data into tables.
 */
