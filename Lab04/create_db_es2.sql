@@ -1,4 +1,4 @@
-REMARK
+
 /*
 Creating database - removing tables
 */
@@ -8,7 +8,7 @@ drop table TICKETS;
 drop table FLIGHTS;
 drop table CARDS;
 
-REMARK
+
 /* 
 Creating tables
 */  
@@ -60,7 +60,7 @@ CREATE TABLE NOTIFY
 
 
 
-REMARK
+
 /*
 Inserting data into tables.
 */
