@@ -33,3 +33,9 @@ values (10, sysdate, '333000020', 4, 4, 'C');
 -- TEST TRIG 3
 UPDATE CELL
 SET MaxCalls = MaxCalls - 2;
+
+-- TEST TRIG 4
+UPDATE CELL
+SET MaxCalls = MaxCalls - 1;
+UPDATE CELL
+SET MaxCalls = MaxCalls - 10;
