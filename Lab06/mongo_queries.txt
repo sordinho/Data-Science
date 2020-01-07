@@ -1,0 +1,29 @@
+ a)
+ db.restaurants.find({cost: "medium"}).pretty()
+
+b)
+ db.restaurants.find(
+     {review:{$gt:4}, 
+     $or:[ {cost: "medium"}, {cost: "low"}]
+     }).pretty()
+
+c1)
+ db.restaurants.find(
+     {maxPeople: {$gt:5},
+     $or: [{
+                $or: [{cost: "medium"}, {cost: "high"}],
+                $or: [  { tag: "italian"}, {tag: "japanese"}]},
+           {
+                review: {$gt:5},
+                
+           }]
+     }).pretty()
+
+
+
+
+db.restaurants.find(
+          {maxPeople: {$gt:5},
+           $or: [{cost: "medium"}, {cost: "high"}],
+           $or: [  { tag: "italian"}, {tag: "japanese"}] 
+           }).pretty()
